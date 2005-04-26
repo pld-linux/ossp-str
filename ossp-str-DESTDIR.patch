@@ -1,0 +1,30 @@
+diff -Nurb str-0.9.10.orig/Makefile.in str-0.9.10.new/Makefile.in
+--- str-0.9.10.orig/Makefile.in	2005-01-24 16:20:22.000000000 +0100
++++ str-0.9.10.new/Makefile.in	2005-04-25 22:36:03.222791464 +0200
+@@ -127,16 +127,16 @@
+ 	$(LIBTOOL) --mode=execute ./str_test
+ 
+ install: all
+-	$(SHTOOL) mkdir -p -f -m 755 $(bindir)
+-	$(SHTOOL) mkdir -p -f -m 755 $(includedir)
+-	$(SHTOOL) mkdir -p -f -m 755 $(libdir)
+-	$(SHTOOL) mkdir -p -f -m 755 $(mandir)/man1
+-	$(SHTOOL) mkdir -p -f -m 755 $(mandir)/man3
+-	$(SHTOOL) install -c -m 755 str-config $(bindir)/str-config
+-	$(SHTOOL) install -c -m 644 str-config.1 $(mandir)/man1/str-config.1
+-	$(SHTOOL) install -c -m 644 str.3 $(mandir)/man3/str.3
+-	$(SHTOOL) install -c -m 644 str.h $(includedir)/str.h
+-	@$(LIBTOOL) --mode=install $(SHTOOL) install -c -m 644 libstr.la $(libdir)/libstr.la
++	$(SHTOOL) mkdir -p -f -m 755 $(DESTDIR)$(bindir)
++	$(SHTOOL) mkdir -p -f -m 755 $(DESTDIR)$(includedir)
++	$(SHTOOL) mkdir -p -f -m 755 $(DESTDIR)$(libdir)
++	$(SHTOOL) mkdir -p -f -m 755 $(DESTDIR)$(mandir)/man1
++	$(SHTOOL) mkdir -p -f -m 755 $(DESTDIR)$(mandir)/man3
++	$(SHTOOL) install -c -m 755 str-config $(DESTDIR)$(bindir)/str-config
++	$(SHTOOL) install -c -m 644 str-config.1 $(DESTDIR)$(mandir)/man1/str-config.1
++	$(SHTOOL) install -c -m 644 str.3 $(DESTDIR)$(mandir)/man3/str.3
++	$(SHTOOL) install -c -m 644 str.h $(DESTDIR)$(includedir)/str.h
++	@$(LIBTOOL) --mode=install $(SHTOOL) install -c -m 644 libstr.la $(DESTDIR)$(libdir)/libstr.la
+ 
+ clean:
+ 	$(RM) *.lo *.o
