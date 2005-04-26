@@ -8,7 +8,7 @@ Release:	0.1
 License:	distributable (see README)
 Group:		Libraries
 Source0:	ftp://ftp.ossp.org/pkg/lib/%{tarballname}/%{tarballname}-%{version}.tar.gz
-# Source0-md5:
+# Source0-md5:	067832cd34c06980f2dc1bc4142d9987
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.ossp.org/pkg/lib/%{tarballname}/
 Requires(post,postun):	/sbin/ldconfig
