@@ -1,15 +1,18 @@
-
+#
+# Conditional build:
+%bcond_without	static_libs # don't build static libraries
+#
 %define tarballname str
-
+#
 Summary:	OSSP str - string handling library
 Summary(pl):	OSSP str - biblioteka do obs³ugi ³añcuchów znaków
 Name:		ossp-str
-Version:	0.9.10
+Version:	0.9.11
 Release:	0.1
 License:	distributable (see README)
 Group:		Libraries
 Source0:	ftp://ftp.ossp.org/pkg/lib/str/%{tarballname}-%{version}.tar.gz
-# Source0-md5:	067832cd34c06980f2dc1bc4142d9987
+# Source0-md5:	e9ff9178f8532ff7237c8cd6b4508ad7
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.ossp.org/pkg/lib/str/
 BuildRequires:	autoconf
@@ -65,7 +68,8 @@ mv -f aclocal.m4 acinclude.m4
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
-%configure
+%configure \
+	%{!?with_static_libs:--enable-static=no}
 %{__make}
 
 %install
@@ -93,6 +97,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*
 %{_mandir}/man[13]/*
 
+%if %{with static}
 %files static
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.a
+%endif
