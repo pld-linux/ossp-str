@@ -7,12 +7,12 @@
 Summary:	OSSP str - string handling library
 Summary(pl):	OSSP str - biblioteka do obs³ugi ³añcuchów znaków
 Name:		ossp-str
-Version:	0.9.11
+Version:	0.9.12
 Release:	0.1
 License:	distributable (see README)
 Group:		Libraries
 Source0:	ftp://ftp.ossp.org/pkg/lib/str/%{tarballname}-%{version}.tar.gz
-# Source0-md5:	e9ff9178f8532ff7237c8cd6b4508ad7
+# Source0-md5:	
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.ossp.org/pkg/lib/str/
 BuildRequires:	autoconf
