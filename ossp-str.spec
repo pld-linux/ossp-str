@@ -12,7 +12,7 @@ Release:	0.1
 License:	distributable (see README)
 Group:		Libraries
 Source0:	ftp://ftp.ossp.org/pkg/lib/str/%{tarballname}-%{version}.tar.gz
-# Source0-md5:	
+# Source0-md5:	3f6da8a6ae6662eedf481f11a65592b2
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.ossp.org/pkg/lib/str/
 BuildRequires:	autoconf
