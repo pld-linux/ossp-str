@@ -5,7 +5,7 @@
 %define tarballname str
 #
 Summary:	OSSP str - string handling library
-Summary(pl):	OSSP str - biblioteka do obs≥ugi ≥aÒcuchÛw znakÛw
+Summary(pl.UTF-8):   OSSP str - biblioteka do obs≈Çugi ≈Ça≈Ñcuch√≥w znak√≥w
 Name:		ossp-str
 Version:	0.9.12
 Release:	0.1
@@ -27,36 +27,36 @@ ISO-C strings. So it can be considered as a superset of POSIX
 string(3), but its main intention is to provide a more convenient and
 compact API plus a more generalized functionality.
 
-%description -l pl
-OSSP str to ogÛlna biblioteka do ≥aÒcuchÛw znakÛw napisana w ISO-C,
-dostarczaj±ca funkcje do obs≥ugi, przetwarzania, przeszukiwania i
-formatowania ≥aÒcuchÛw znakÛw ISO-C. Moøe byÊ uznawana za nadzbiÛr
-string(3) wg POSIX, ale g≥Ûwnym zamiarem jest dostarczenie bardziej
-wygodnego i zwartego API oraz ogÛlniejszej funkcjonalno∂ci.
+%description -l pl.UTF-8
+OSSP str to og√≥lna biblioteka do ≈Ça≈Ñcuch√≥w znak√≥w napisana w ISO-C,
+dostarczajƒÖca funkcje do obs≈Çugi, przetwarzania, przeszukiwania i
+formatowania ≈Ça≈Ñcuch√≥w znak√≥w ISO-C. Mo≈ºe byƒá uznawana za nadzbi√≥r
+string(3) wg POSIX, ale g≈Ç√≥wnym zamiarem jest dostarczenie bardziej
+wygodnego i zwartego API oraz og√≥lniejszej funkcjonalno≈õci.
 
 %package devel
 Summary:	OSSP str - header files and development libraries
-Summary(pl):	OSSP str - pliki nag≥Ûwkowe i biblioteki programistyczne
+Summary(pl.UTF-8):   OSSP str - pliki nag≈Ç√≥wkowe i biblioteki programistyczne
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 OSSP str - header files and development libraries.
 
-%description devel -l pl
-OSSP str - pliki nag≥Ûwkowe i biblioteki programistyczne.
+%description devel -l pl.UTF-8
+OSSP str - pliki nag≈Ç√≥wkowe i biblioteki programistyczne.
 
 %package static
 Summary:	OSSP str - string handling library - static libraries
-Summary(pl):	OSSP str - biblioteka do obs≥ugi ≥aÒcuchÛw znakÛw - biblioteki statyczne
+Summary(pl.UTF-8):   OSSP str - biblioteka do obs≈Çugi ≈Ça≈Ñcuch√≥w znak√≥w - biblioteki statyczne
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 OSSP str - string handling library - static libraries.
 
-%description static -l pl
-OSSP str - biblioteka do obs≥ugi ≥aÒcuchÛw znakÛw - biblioteki
+%description static -l pl.UTF-8
+OSSP str - biblioteka do obs≈Çugi ≈Ça≈Ñcuch√≥w znak√≥w - biblioteki
 statyczne.
 
 %prep
