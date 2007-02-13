@@ -5,7 +5,7 @@
 %define tarballname str
 #
 Summary:	OSSP str - string handling library
-Summary(pl.UTF-8):   OSSP str - biblioteka do obsługi łańcuchów znaków
+Summary(pl.UTF-8):	OSSP str - biblioteka do obsługi łańcuchów znaków
 Name:		ossp-str
 Version:	0.9.12
 Release:	0.1
@@ -36,7 +36,7 @@ wygodnego i zwartego API oraz ogólniejszej funkcjonalności.
 
 %package devel
 Summary:	OSSP str - header files and development libraries
-Summary(pl.UTF-8):   OSSP str - pliki nagłówkowe i biblioteki programistyczne
+Summary(pl.UTF-8):	OSSP str - pliki nagłówkowe i biblioteki programistyczne
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -48,7 +48,7 @@ OSSP str - pliki nagłówkowe i biblioteki programistyczne.
 
 %package static
 Summary:	OSSP str - string handling library - static libraries
-Summary(pl.UTF-8):   OSSP str - biblioteka do obsługi łańcuchów znaków - biblioteki statyczne
+Summary(pl.UTF-8):	OSSP str - biblioteka do obsługi łańcuchów znaków - biblioteki statyczne
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
