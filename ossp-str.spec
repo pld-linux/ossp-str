@@ -61,7 +61,7 @@ statyczne.
 
 %prep
 %setup -q -n %{tarballname}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 mv -f aclocal.m4 acinclude.m4
